@@ -54,6 +54,7 @@ modules/*
 !modules/exif
 !modules/ffmpeg
 !modules/gd
+!modules/httpauth
 !modules/icons
 !modules/imagemagick
 !modules/jpegtran
