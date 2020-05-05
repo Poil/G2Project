@@ -39,7 +39,7 @@ class BulkManageModule extends GalleryModule {
 	/**
 	 * Constructor
 	 */
-    function BulkManageModule() {
+    function __constructor() {
         global $gallery;
         $this->setId('bulkmanage');
         $this->setName($gallery->i18n('Bulk Manage'));

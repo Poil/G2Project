@@ -61,6 +61,7 @@ modules/*
 !modules/jpegtran
 !modules/keyalbum
 !modules/netpbm
+!modules/permalinks
 !modules/rating
 !modules/rearrange
 !modules/search
