@@ -36,8 +36,8 @@ class EmbedVideoModule extends GalleryModule {
 	$this->setVersion('1.1.5');
 	$this->setGroup('import', $gallery->i18n('Import'));
 	$this->setCallbacks('getSiteAdminViews');
-	$this->setRequiredCoreApi(array(7, 3));
-	$this->setRequiredModuleApi(array(3, 0));
+    $this->setRequiredCoreApi(array(8, 0));
+    $this->setRequiredModuleApi(array(4, 0));
     }
 
     /**

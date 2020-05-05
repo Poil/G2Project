@@ -28,17 +28,17 @@
 class MultiLangModule extends GalleryModule /* and GalleryEventListener */ {
 
     function __construct() {
-	global $gallery;
+	    global $gallery;
 
-	$this->setId('multilang');
-	$this->setName($gallery->i18n('MultiLanguage'));
-	$this->setDescription($gallery->i18n('Support item captions in multiple languages'));
-	$this->setVersion('1.0.12');
-	$this->_templateVersion = 1;
-	$this->setGroup('data', $gallery->i18n('Extra Data'));
-	$this->setCallbacks('getSiteAdminViews');
-	$this->setRequiredCoreApi(array(7, 43));
-	$this->setRequiredModuleApi(array(3, 6));
+	    $this->setId('multilang');
+	    $this->setName($gallery->i18n('MultiLanguage'));
+	    $this->setDescription($gallery->i18n('Support item captions in multiple languages'));
+	    $this->setVersion('1.0.12');
+	    $this->_templateVersion = 1;
+	    $this->setGroup('data', $gallery->i18n('Extra Data'));
+	    $this->setCallbacks('getSiteAdminViews');
+        $this->setRequiredCoreApi(array(8, 0));
+        $this->setRequiredModuleApi(array(4, 0));
     }
 
     /**

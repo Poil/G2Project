@@ -36,8 +36,8 @@ class ImageBlockModule extends GalleryModule {
 	$this->_templateVersion = 1;
 	$this->setGroup('blocks', $gallery->i18n('Blocks'));
 	$this->setCallbacks('getSiteAdminViews');
-	$this->setRequiredCoreApi(array(7, 47));
-	$this->setRequiredModuleApi(array(3, 6));
+    $this->setRequiredCoreApi(array(8, 0));
+    $this->setRequiredModuleApi(array(4, 0));
     }
 
     /**

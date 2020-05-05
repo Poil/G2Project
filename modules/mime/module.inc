@@ -38,8 +38,8 @@ class MimeModule extends GalleryModule {
 	$this->_templateVersion = 1;
 	$this->setGroup('data', $gallery->i18n('Extra Data'));
 	$this->setCallbacks('getSiteAdminViews');
-	$this->setRequiredCoreApi(array(7, 20));
-	$this->setRequiredModuleApi(array(3, 6));
+    $this->setRequiredCoreApi(array(8, 0));
+    $this->setRequiredModuleApi(array(4, 0));
     }
 
     /**

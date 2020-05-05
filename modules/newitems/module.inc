@@ -30,17 +30,17 @@
 class NewItemsModule extends GalleryModule {
 
     function __construct() {
-	global $gallery;
+	    global $gallery;
 
-	$this->setId('newitems');
-	$this->setName($gallery->i18n('New Items'));
-	$this->setDescription($gallery->i18n('Highlight new/updated Gallery items'));
-	$this->setVersion('1.0.8');
-	$this->_templateVersion = 1;
-	$this->setGroup('display', $gallery->i18n('Display'));
-	$this->setCallbacks('getSiteAdminViews|getItemSummaries');
-	$this->setRequiredCoreApi(array(7, 27));
-	$this->setRequiredModuleApi(array(3, 6));
+	    $this->setId('newitems');
+	    $this->setName($gallery->i18n('New Items'));
+	    $this->setDescription($gallery->i18n('Highlight new/updated Gallery items'));
+	    $this->setVersion('1.0.8');
+	    $this->_templateVersion = 1;
+	    $this->setGroup('display', $gallery->i18n('Display'));
+	    $this->setCallbacks('getSiteAdminViews|getItemSummaries');
+        $this->setRequiredCoreApi(array(8, 0));
+        $this->setRequiredModuleApi(array(4, 0));
     }
 
     /**

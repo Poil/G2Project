@@ -47,8 +47,8 @@ class BulkManageModule extends GalleryModule {
         $this->setVersion('1.0.0');
         $this->setCallbacks('getItemLinks|getItemAdminViews');
         $this->setGroup('gallery', $this->translate('Gallery'));
-        $this->setRequiredCoreApi(array(7, 2));
-        $this->setRequiredModuleApi(array(3, 0));
+        $this->setRequiredCoreApi(array(8, 0));
+        $this->setRequiredModuleApi(array(4, 0));
         $this->_templateVersion = 1;
         $this->_bulkManageApiVersion = array(1, 0);
     }

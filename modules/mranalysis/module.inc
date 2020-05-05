@@ -40,8 +40,8 @@ class MRAnalysisModule extends GalleryModule {
         $this->setGroup('analysis', $gallery->i18n('Analysis'));
         $this->setCallbacks('getSiteAdminViews');
         
-	$this->setRequiredCoreApi(array(7, 4));
-	$this->setRequiredModuleApi(array(3, 0));
+        $this->setRequiredCoreApi(array(8, 0));
+        $this->setRequiredModuleApi(array(4, 0));
     }
     
     /**
