@@ -49,6 +49,7 @@ composer.phar
 ##############
 modules/*
 !modules/archiveupload
+!modules/bulkmanage
 !modules/comment
 !modules/core
 !modules/exif
