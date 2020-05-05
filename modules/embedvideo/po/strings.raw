@@ -1,0 +1,43 @@
+# $Id: strings.raw 15812 2007-02-13 22:38:27Z mindless $
+
+/* ItemAddEmbedVideo.inc */
+gettext("Embed Video") /* also in: module.inc */
+
+/* module.inc */
+gettext("Add embedded videos from the web")
+gettext("Import")
+
+/* templates/EmbedVideoSiteAdmin.tpl */
+gettext("Embed Video Settings")
+gettext("Defaults")
+gettext("These variables provide default values for users on your site. Users will be able to override these defaults by making changes in the user interface of the applets, or by changing their local defaults file.")
+gettext("You have no default variables")
+gettext("Variable")
+gettext("Action")
+gettext("Delete")
+gettext("Add a new default variable")
+gettext("You must enter a variable name and value")
+gettext("New variable")
+gettext("Add variable")
+gettext("Overrides")
+gettext("These variables override any other values for applets users execute on your site. Users will not be able to change these values.")
+gettext("You have no override variables")
+gettext("Add a new override variable")
+gettext("Help")
+gettext("Here are a selection of variables that affect video embedding.")
+gettext("variable")
+gettext("values")
+gettext("help")
+gettext("instructs the module to use Gallery's built-in flv player when embedding links to .flv files")
+gettext("instructs the module to use an external flv player when embedding links to .flv files")
+gettext("provides the module with the flashvars to use for the external flash player")
+gettext("specify the youtube Developer ID used when this plugin makes API calls to youtube")
+gettext("specify the width dimension of the embedded video player")
+gettext("specify the height dimension of the embedded video player")
+gettext("turn on module debug output")
+gettext("URL path to a jpg to use as a thumbnail for all directly linked/embedded flv files.")
+
+/* templates/ItemAddEmbedVideo.tpl */
+gettext("Import embedded videos into Gallery from another website.  Enter a URL below to a web page anywhere on the net and Gallery will add an embedded link to that file. Supported video links: www.youtube.com, video.google.com, or links to any .flv files.")
+gettext("URL")
+gettext("Add Embedded Video")

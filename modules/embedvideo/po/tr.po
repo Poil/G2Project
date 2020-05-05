@@ -1,0 +1,258 @@
+# $Id: tr.po 16040 2007-03-16 23:04:36Z mindless $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2007 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Embed Video 1.0.0\n"
+"POT-Creation-Date: 2005-05-23 02:14+0200\n"
+"PO-Revision-Date: 2006-02-27 00:00+0200\n"
+"Last-Translator: Goker ISIK <admin@ansolon.com>\n"
+"Language-Team: Turkish <admin@ansolon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+
+msgid "Embed Video"
+msgstr ""
+
+msgid "Add embedded videos from the web"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Embed Video Settings"
+msgstr ""
+
+msgid "Defaults"
+msgstr ""
+
+msgid ""
+"These variables provide default values for users on your site. Users will be able to "
+"override these defaults by making changes in the user interface of the applets, or by "
+"changing their local defaults file."
+msgstr ""
+
+msgid "You have no default variables"
+msgstr ""
+
+msgid "Variable"
+msgstr ""
+
+msgid "Action"
+msgstr "Hareket"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Add a new default variable"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a variable name and value"
+msgstr "You must enter a user name"
+
+msgid "New variable"
+msgstr ""
+
+#, fuzzy
+msgid "Add variable"
+msgstr "Dosya Ekle"
+
+msgid "Overrides"
+msgstr ""
+
+msgid ""
+"These variables override any other values for applets users execute on your site. Users will "
+"not be able to change these values."
+msgstr ""
+
+msgid "You have no override variables"
+msgstr ""
+
+msgid "Add a new override variable"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Here are a selection of variables that affect video embedding."
+msgstr ""
+
+msgid "variable"
+msgstr ""
+
+msgid "values"
+msgstr ""
+
+msgid "help"
+msgstr ""
+
+msgid ""
+"instructs the module to use Gallery's built-in flv player when embedding links to .flv files"
+msgstr ""
+
+msgid "instructs the module to use an external flv player when embedding links to .flv files"
+msgstr ""
+
+msgid "provides the module with the flashvars to use for the external flash player"
+msgstr ""
+
+msgid "specify the youtube Developer ID used when this plugin makes API calls to youtube"
+msgstr ""
+
+msgid "specify the width dimension of the embedded video player"
+msgstr ""
+
+msgid "specify the height dimension of the embedded video player"
+msgstr ""
+
+msgid "turn on module debug output"
+msgstr ""
+
+msgid "URL path to a jpg to use as a thumbnail for all directly linked/embedded flv files."
+msgstr ""
+
+msgid ""
+"Import embedded videos into Gallery from another website.  Enter a URL below to a web page "
+"anywhere on the net and Gallery will add an embedded link to that file. Supported video "
+"links: www.youtube.com, video.google.com, or links to any .flv files."
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Add Embedded Video"
+msgstr ""
+
+#~ msgid "From Local Server"
+#~ msgstr "Lokal Server'dan"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid "Add Items"
+#~ msgstr "Ögeler Ekle"
+
+#~ msgid "site admin"
+#~ msgstr "site yöneticisi"
+
+#~ msgid "Server Path"
+#~ msgstr "Server Klasör Yolu"
+
+#~ msgid "You must enter a directory."
+#~ msgstr "Klasör girmelisiniz."
+
+#~ msgid "Legal Directories"
+#~ msgstr "Yasal Klasörler"
+
+#~ msgid "modify"
+#~ msgstr "modifiye et"
+
+#~ msgid "Recent Directories"
+#~ msgstr "Yeni Klasörler"
+
+#~ msgid "Find Files"
+#~ msgstr "Dosyaları Bul"
+
+#~ msgid "Directory: %s"
+#~ msgstr "Klasör: %s"
+
+#~ msgid "File name"
+#~ msgstr "Dosya Adı"
+
+#~ msgid "Type"
+#~ msgstr "Tür"
+
+#~ msgid "Size"
+#~ msgstr "Boyut"
+
+#~ msgid "Parent Directory"
+#~ msgstr "Ana Klasör"
+
+#~ msgid "Directory"
+#~ msgstr "Klasör"
+
+#, fuzzy
+#~ msgid "for selected items"
+#~ msgstr "[core] Delete item"
+
+#~ msgid "Copy base filenames to:"
+#~ msgstr "Temel dosya adlarını kopyala:"
+
+#~ msgid "Title"
+#~ msgstr "Başlık"
+
+#~ msgid "Summary"
+#~ msgstr "Özet"
+
+#~ msgid "Description"
+#~ msgstr "Açıklama"
+
+#~ msgid "Start Over"
+#~ msgstr "Baştan Başla"
+
+#, fuzzy
+#~ msgid "The web page you specified is unavailable"
+#~ msgstr "The user name you entered is invalid"
+
+#~ msgid "Recent URLs"
+#~ msgstr "Yeni URL'ler"
+
+#~ msgid "URL: %s"
+#~ msgstr "URL: %s"
+
+#~ msgid "change"
+#~ msgstr "değiştir"
+
+#~ msgid "Add URLs"
+#~ msgstr "URL'ler ekle"
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Ayarlar başarıyla kaydedildi"
+
+#~ msgid "Local Server Upload Paths"
+#~ msgstr "Local Server Yükleme Klasör Yolları"
+
+#~ msgid "Path"
+#~ msgstr "Klasör Yolu"
+
+#~ msgid "remove"
+#~ msgstr "kaldır"
+
+#~ msgid "Add"
+#~ msgstr "Ekle"
+
+#~ msgid "You must enter a directory to add."
+#~ msgstr "Eklemek için klasör girmelisiniz."
+
+#~ msgid "open_basedir documentation"
+#~ msgstr "open_basedir dökümantasyonu"
+
+#~ msgid "The webserver does not have permissions to read that directory."
+#~ msgstr "Webserverın bu klasörü okuma izni yok."
+
+#~ msgid "Save"
+#~ msgstr "Kaydet"
+
+#~ msgid "Reset"
+#~ msgstr "Sıfırla"

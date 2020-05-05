@@ -1,0 +1,248 @@
+# $Id: sk.po 16040 2007-03-16 23:04:36Z mindless $
+#
+# Gallery - a web based photo album viewer and editor
+# Copyright (C) 2000-2007 Bharat Mediratta
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# Branislav Hanacek <brango@radegast>, 2006.
+# Branislav Hanacek <brango@brango.sk>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery: Embed Video 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-03 10:22+0200\n"
+"PO-Revision-Date: 2006-09-10 21:10+0200\n"
+"Last-Translator: Branislav Hanacek <brango@brango.sk>\n"
+"Language-Team: Slovak <gallery-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-Country: SLOVAKIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Embed Video"
+msgstr ""
+
+msgid "Add embedded videos from the web"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Embed Video Settings"
+msgstr ""
+
+msgid "Defaults"
+msgstr ""
+
+msgid ""
+"These variables provide default values for users on your site. Users will be able to "
+"override these defaults by making changes in the user interface of the applets, or by "
+"changing their local defaults file."
+msgstr ""
+
+msgid "You have no default variables"
+msgstr ""
+
+msgid "Variable"
+msgstr ""
+
+msgid "Action"
+msgstr "Akcia"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Add a new default variable"
+msgstr ""
+
+#, fuzzy
+msgid "You must enter a variable name and value"
+msgstr "Musíte zadať adresár, ktorý chcete pridať."
+
+msgid "New variable"
+msgstr ""
+
+#, fuzzy
+msgid "Add variable"
+msgstr "Pridať súbory"
+
+msgid "Overrides"
+msgstr ""
+
+msgid ""
+"These variables override any other values for applets users execute on your site. Users will "
+"not be able to change these values."
+msgstr ""
+
+msgid "You have no override variables"
+msgstr ""
+
+msgid "Add a new override variable"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Here are a selection of variables that affect video embedding."
+msgstr ""
+
+msgid "variable"
+msgstr ""
+
+msgid "values"
+msgstr ""
+
+msgid "help"
+msgstr ""
+
+msgid ""
+"instructs the module to use Gallery's built-in flv player when embedding links to .flv files"
+msgstr ""
+
+msgid "instructs the module to use an external flv player when embedding links to .flv files"
+msgstr ""
+
+msgid "provides the module with the flashvars to use for the external flash player"
+msgstr ""
+
+msgid "specify the youtube Developer ID used when this plugin makes API calls to youtube"
+msgstr ""
+
+msgid "specify the width dimension of the embedded video player"
+msgstr ""
+
+msgid "specify the height dimension of the embedded video player"
+msgstr ""
+
+msgid "turn on module debug output"
+msgstr ""
+
+msgid "URL path to a jpg to use as a thumbnail for all directly linked/embedded flv files."
+msgstr ""
+
+msgid ""
+"Import embedded videos into Gallery from another website.  Enter a URL below to a web page "
+"anywhere on the net and Gallery will add an embedded link to that file. Supported video "
+"links: www.youtube.com, video.google.com, or links to any .flv files."
+msgstr ""
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Add Embedded Video"
+msgstr ""
+
+#~ msgid "From Local Server"
+#~ msgstr "Z miestneho serveru"
+
+#~ msgid "Photo"
+#~ msgstr "Fotografia"
+
+#~ msgid "From Web Page"
+#~ msgstr " Z webovej stránky"
+
+#~ msgid "Add Items"
+#~ msgstr "Pridať položky"
+
+#~ msgid "site admin"
+#~ msgstr "správca"
+
+#~ msgid "modify"
+#~ msgstr "upraviť"
+
+#~ msgid "File name"
+#~ msgstr "Meno súboru"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgid "%d byte"
+#~ msgid_plural "%d bytes"
+#~ msgstr[0] "%d bajt"
+#~ msgstr[1] "   bajty     %d"
+#~ msgstr[2] "   bajtov     %d"
+
+#~ msgid "Title"
+#~ msgstr "Titulok"
+
+#~ msgid "Summary"
+#~ msgstr "Súhrn"
+
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+#~ msgid "URL: %s"
+#~ msgstr "URL: %s"
+
+#~ msgid "change"
+#~ msgstr "zmeniť"
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Nastavenia boli úspešne uložené"
+
+#~ msgid "Local Server Upload Paths"
+#~ msgstr "Cesty pre adresár na príjem dát na miestnom serveri"
+
+#~ msgid ""
+#~ "Specify the legal directories on the local server where a user can store files and then "
+#~ "upload them into Gallery using the <i>Upload from Local Server</i> feature.  The paths "
+#~ "you enter here and all the files and directories under those paths will be available to "
+#~ "any Gallery user who has upload privileges, so you should limit this to directories that "
+#~ "won't contain sensitive data (eg. /tmp or /usr/ftp/incoming)"
+#~ msgstr ""
+#~ "Nastavenie povolených addresárov na serveri, do ktorých môžu používatelia ukladať súbory "
+#~ "a potom ich pomocou vlastnosti <i>Nahranie z miestneho servera</i> nahrať do Galérie. "
+#~ "Cesty, súbory a adresáre, ktoré tu uvediete, budú prístupné pre všetkých poižívateľov, "
+#~ "ktorí majú oprávnenie k nahrávaniu údajov na server. Mali by ste teda povoliť len "
+#~ "adresáre, ktoré neobsahujú citlivé údaje (napr. /tmp alebo /usr/ftp/incoming)."
+
+#~ msgid "Path"
+#~ msgstr "Cesta"
+
+#~ msgid "remove"
+#~ msgstr "odstrániť"
+
+#~ msgid "Add"
+#~ msgstr "Pridať"
+
+#~ msgid "open_basedir documentation"
+#~ msgstr "dokumentácia pre open_basedir"
+
+#~ msgid ""
+#~ "Your webserver is configured to prevent you from accessing that directory.  Please refer "
+#~ "to the %s and consult your webserver administrator."
+#~ msgstr ""
+#~ "Konfigurácia tohoto webového servera Vám zabraňuje v prístupe k tomuto adresáru. Obráťte "
+#~ "sa, prosím, na %s a konzultujte tento problém so správcom servera."
+
+#~ msgid "The webserver does not have permissions to read that directory."
+#~ msgstr "Webový server nemá oprávnenie na čítanie tohto adresára."
+
+#~ msgid "The path you specified is not a valid directory."
+#~ msgstr "Zadaná cesta nie je platný adresár."
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#~ msgid "Reset"
+#~ msgstr "Východzie hodnoty"

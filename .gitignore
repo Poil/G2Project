@@ -47,25 +47,25 @@ composer.phar
 
 # G2 Modules #
 ##############
-modules/*
-!modules/archiveupload
-!modules/bulkmanage
-!modules/comment
-!modules/core
-!modules/exif
-!modules/ffmpeg
-!modules/gd
-!modules/httpauth
-!modules/icons
-!modules/imagemagick
-!modules/jpegtran
-!modules/keyalbum
-!modules/netpbm
-!modules/permalinks
-!modules/rating
-!modules/rearrange
-!modules/search
-!modules/slideshow
+#modules/*
+#!modules/archiveupload
+#!modules/bulkmanage
+#!modules/comment
+#!modules/core
+#!modules/exif
+#!modules/ffmpeg
+#!modules/gd
+#!modules/httpauth
+#!modules/icons
+#!modules/imagemagick
+#!modules/jpegtran
+#!modules/keyalbum
+#!modules/netpbm
+#!modules/permalinks
+#!modules/rating
+#!modules/rearrange
+#!modules/search
+#!modules/slideshow
 
 
 # G2 Themes #
