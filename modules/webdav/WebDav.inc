@@ -223,7 +223,7 @@ class WebDavView extends GalleryView {
     /**
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	$requestMethod = GalleryUtilities::strToLower(
 		GalleryUtilities::getServerVar('REQUEST_METHOD'));
 	if (!in_array($requestMethod, array('options', 'propfind', 'proppatch', 'mkcol', 'delete',

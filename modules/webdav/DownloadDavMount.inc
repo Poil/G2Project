@@ -37,7 +37,7 @@ class DownloadDavMountView extends GalleryView {
     /**
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	global $gallery;
 	$urlGenerator =& $gallery->getUrlGenerator();
 

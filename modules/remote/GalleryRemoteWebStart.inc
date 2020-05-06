@@ -51,7 +51,7 @@ class GalleryRemoteWebStartView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	global $gallery;
 
 	if (!headers_sent()) {
