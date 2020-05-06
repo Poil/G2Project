@@ -44,7 +44,7 @@ class MultiLangModule extends GalleryModule /* and GalleryEventListener */ {
     /**
      * @see GalleryModule::upgrade
      */
-    function upgrade($currentVersion) {
+    function upgrade($currentVersion, $x1=null) {
 	if (!isset($currentVersion)) {
 	    $ret = $this->setParameter('languages', '');
 	    if ($ret) {

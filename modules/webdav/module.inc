@@ -208,7 +208,7 @@ class WebDavModule extends GalleryModule /* and GalleryEventListener */ {
     /**
      * @see GalleryModule::getItemLinks
      */
-    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId) {
+    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId=null) {
 	$links = array();
 	foreach ($items as $item) {
 	    if (!$item->getCanContainChildren() || empty($wantsDetailedLinks[$item->getId()])) {

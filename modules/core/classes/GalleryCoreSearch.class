@@ -219,11 +219,14 @@ class GalleryCoreSearch extends GallerySearchInterface_1_0 {
 			$fields = array();
 
 			foreach (array(
-				'[GalleryItem::title]'       => $text['title'],
-				'[GalleryItem::summary]'     => $text['summary'],
-				'[GalleryItem::keywords]'    => $text['keywords'],
-				'[GalleryItem::description]' => $text['description'],
-			) as $columnName => $fieldText) {
+				'title'       => $text['title'],
+				'summary'     => $text['summary'],
+				'keywords'    => $text['keywords'],
+				'description' => $text['description'],
+			)
+			as $optionName => $fieldText) {
+				$columnName = '[GalleryItem::' . $optionName . ']';
+
 				if (isset($selectMap[$columnName])) {
 					/*
 					 * Remember that our field columns start at column index 4
@@ -231,6 +234,7 @@ class GalleryCoreSearch extends GallerySearchInterface_1_0 {
 					 */
 					$fields[] = array(
 						'key'   => $fieldText,
+						'field' => $optionName,
 						'value' => $result[$selectMap[$columnName] + 4],
 					);
 				}
@@ -238,6 +242,7 @@ class GalleryCoreSearch extends GallerySearchInterface_1_0 {
 
 			$fields[] = array(
 				'key'   => $text['owner'],
+				'field' => 'owner',
 				'value' => !empty($result[1]) ? $result[1] : $result[2],
 			);
 

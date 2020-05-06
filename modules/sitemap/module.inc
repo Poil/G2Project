@@ -22,45 +22,65 @@
  * Module that creates a Google Sitemap for your Gallery2 install.
  * @package Sitemap
  * @author Bharat Mediratta <bharat@menalto.com>
- * @version $Revision: 20954 $
+ * @version $Revision: 20951 $
  */
 class SitemapModule extends GalleryModule {
+	public function __construct() {
+		global $gallery;
+		$this->setId('sitemap');
+		$this->setName($gallery->i18n('Sitemap'));
+		$this->setDescription(
+			$gallery->i18n('Generate a Google Sitemap for your Gallery')
+		);
+		$this->setVersion('7.0.0');
+		$this->_templateVersion = 1;
+		$this->setGroup('export', $gallery->i18n('Export'));
+		$this->setCallbacks('getSiteAdminViews');
+		$this->setRequiredCoreApi(array(8, 0));
+		$this->setRequiredModuleApi(array(4, 0));
+	}
 
-    function __construct() {
-	global $gallery;
-	$this->setId('sitemap');
-	$this->setName($gallery->i18n('Sitemap'));
-	$this->setDescription($gallery->i18n('Generate a Google Sitemap for your Gallery'));
-	$this->setVersion('1.0.6');
-	$this->_templateVersion = 1;
-	$this->setGroup('export', $gallery->i18n('Export'));
-	$this->setCallbacks('getSiteAdminViews');
-	$this->setRequiredCoreApi(array(8, 0));
-	$this->setRequiredModuleApi(array(4, 0));
-    }
+	/**
+	 * Load as Singleton
+	 */
+	public static function doStatic() {
+		static $singleton;
 
-    /**
-     * @see GalleryModule::getSiteAdminViews
-     */
-    function getSiteAdminViews() {
-	$data = array(array('name' => $this->translate('Google Sitemap'),
-			    'view' => 'sitemap.AdminSitemap'));
-	return array(null, $data);
-    }
+		if (!isset($singleton)) {
+			$singleton = new SitemapModule();
+		}
 
-    /**
-     * @see GalleryModule::getRewriteRules
-     */
-    function getRewriteRules() {
-	$rules = array();
+		return $singleton;
+	}
 
-	$rule = array();
-	$rule['match'] = array('view' => 'sitemap.Sitemap');
-	$rule['pattern'] = 'sitemap';
-	$rule['comment'] = $this->translate('Download Sitemap');
-	$rules[] = $rule;
+	/**
+	 * @see GalleryModule::getSiteAdminViews
+	 */
+	public function getSiteAdminViews() {
+		$data = array(
+			array(
+				'name' => $this->translate('Google Sitemap'),
+				'view' => 'sitemap.AdminSitemap',
+			),
+		);
 
-	return $rules;
-    }
+		return array(null, $data);
+	}
+
+	/**
+	 * @see GalleryModule::getRewriteRules
+	 */
+	public function getRewriteRules() {
+		$rules = array();
+
+		$rule            = array();
+		$rule['match']   = array(
+			'view' => 'sitemap.Sitemap',
+		);
+		$rule['pattern'] = 'sitemap';
+		$rule['comment'] = $this->translate('Download Sitemap');
+		$rules[]         = $rule;
+
+		return $rules;
+	}
 }
-?>

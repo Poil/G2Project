@@ -73,7 +73,7 @@ class CommentModule extends GalleryModule {
 	/**
 	 * @see GalleryModule::upgrade
 	 */
-	public function upgrade($currentVersion, $x1=null) {
+	public function upgrade($currentVersion, $x1 = null) {
 		global $gallery;
 
 		$storage =& $gallery->getStorage();

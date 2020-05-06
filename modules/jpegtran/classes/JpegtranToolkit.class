@@ -73,6 +73,10 @@ class JpegtranToolkit extends GalleryToolkit {
 
 		list($ret, $jpegtran) = GalleryCoreApi::getPluginParameter('module', 'jpegtran', 'path');
 
+		if ($ret) {
+			return array($ret, null, null);
+		}
+
 		$tmpDir      = $gallery->getConfig('data.gallery.tmp');
 		$platform    =& $gallery->getPlatform();
 		$tmpFilename = $platform->tempnam($tmpDir, 'jpgt_');
@@ -81,6 +85,9 @@ class JpegtranToolkit extends GalleryToolkit {
 			// This can happen if the $tmpDir path is bad
 			return array(GalleryCoreApi::error(ERROR_BAD_PATH), null, null);
 		}
+
+		$width  = null;
+		$height = null;
 
 		if (isset($context['width'])) {
 			$width  = $context['width'];
@@ -175,7 +182,7 @@ class JpegtranToolkit extends GalleryToolkit {
 
 			$platform->chdir($oldCwd);
 
-			return array(GalleryCoreApi::error(ERROR_TOOLKIT_FAILURE), null, null);
+			return array(GalleryCoreApi::error(ERROR_TOOLKIT_FAILURE, null, null, $output), null, null);
 		}
 
 		$platform->chdir($oldCwd);
