@@ -236,7 +236,7 @@ class ThumbnailImage extends GalleryFileSystemEntity {
     /**
      * @see GalleryEntity::save
      */
-    function save($postEvent=true) {
+    function save($postEvent=true, $setAclId=null) {
 	return parent::save($postEvent, 0);
     }
 
