@@ -44,7 +44,7 @@ class DigibugPrintPhotosView extends GalleryView {
     /**
      * @see GalleryView::renderImmedate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	global $gallery;
 	$urlGenerator =& $gallery->getUrlGenerator();
 

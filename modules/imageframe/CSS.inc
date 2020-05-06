@@ -50,7 +50,7 @@ class CSSView extends GalleryView {
     /**
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	$frameList = GalleryUtilities::getRequestVariables('frames');
 	if (empty($frameList)) {
 	    return GalleryCoreApi::error(ERROR_BAD_PARAMETER);

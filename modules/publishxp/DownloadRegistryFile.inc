@@ -43,7 +43,7 @@ class DownloadRegistryFileView extends GalleryView {
      *
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	global $gallery;
 
 	/* Get the domain name */

@@ -186,7 +186,7 @@ class RedirectView extends GalleryView {
     /**
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();
 	if ($ret) {
 	    return $ret;

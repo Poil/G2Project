@@ -72,7 +72,7 @@ class DirectoryListingView extends GalleryView {
      * API defines the output very specifically so we can't allow any global templating to be used.
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	global $gallery;
 	$gallery->debug("##### DirectoryListingView #####\n\$status = ");
 	$gallery->debug_r($status);

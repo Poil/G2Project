@@ -101,7 +101,7 @@ class ExternalCSSView extends GalleryView {
     /**
      * @see GalleryView::renderImmediate
      */
-    function renderImmediate($status, $error) {
+    function renderImmediate($status=null, $error=null) {
 	header('Content-type: text/html');
 	header('Expires: ' . GalleryUtilities::getHttpDate(time() + 2592000));
 	print '<style type="text/css"> img.giThumbnail { border-style: none; } </style>';
