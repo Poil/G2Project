@@ -43,7 +43,7 @@ class HiddenItemOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	$form['HiddenItemOption']['isHidden'] = $item->hasOnLoadHandler('Hidden');
 	$form['HiddenItemOption']['isAlbum'] = $item->getCanContainChildren();
 

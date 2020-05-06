@@ -322,7 +322,7 @@ class ItemAddFromPicasa extends ItemAddPlugin {
     /**
      * @see ItemAdd:loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	$matches = array();
 	$fileUploadsBool = GalleryUtilities::getPhpIniBool('file_uploads');
 	$totalUploadSize = ini_get('post_max_size');

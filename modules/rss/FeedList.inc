@@ -34,7 +34,7 @@ class FeedListView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	list ($ret, $feeds) = RssMapHelper::fetchFeedsForItem();
 	if ($ret) {
 	    return array($ret, null);

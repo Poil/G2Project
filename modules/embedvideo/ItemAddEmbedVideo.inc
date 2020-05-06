@@ -1501,7 +1501,7 @@ class ItemAddEmbedVideo extends ItemAddPlugin {
  /**
   * @see ItemAdd:loadTemplate
   */
- function loadTemplate(&$template, &$form, $item) {
+ function loadTemplate(&$template=null, &$form=null, $item) {
     global $gallery;
     
     if ($form['formName'] != 'ItemAddEmbedVideo') {

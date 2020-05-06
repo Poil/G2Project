@@ -159,7 +159,7 @@ class ItemEditTheme extends ItemEditPlugin {
 	/**
 	 * @see ItemEditPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		$themeId = $themeSettingsThemeId = $item->getTheme();
 
 		if (empty($themeSettingsThemeId)) {

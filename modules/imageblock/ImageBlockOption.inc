@@ -57,7 +57,7 @@ class ImageBlockOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	list ($ret, $form['ImageBlockOption']['setDisabled']) =
 	    ImageBlockHelper::getDisabledFlag($item->getId());
 	if ($ret) {

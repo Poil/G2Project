@@ -41,7 +41,7 @@ class CreateThumbnailOption extends ItemAddOption {
 	/**
 	 * @see ItemAddOption::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item) {
+	public function loadTemplate(&$template=null, &$form=null, $item) {
 		return array(null, 'modules/core/templates/CreateThumbnailOption.tpl', 'modules_core');
 	}
 

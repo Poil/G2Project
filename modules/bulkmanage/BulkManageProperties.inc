@@ -63,7 +63,7 @@ class BulkManageProperties extends BulkManagePlugin {
     /**
      * @see BulkManagePlugin::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
         /* Controller */
         $template->setVariable('controller', 'bulkmanage.BulkManage');
         $template->style('modules/bulkmanage/bulkmanage.css');

@@ -30,7 +30,7 @@ class SelfRegistrationSuccessView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	list ($pending, $sentConfirmationEmail) =
 	    GalleryUtilities::getRequestVariables('pending', 'sentConfirmationEmail');
 

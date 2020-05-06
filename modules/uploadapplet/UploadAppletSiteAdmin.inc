@@ -140,7 +140,7 @@ class UploadAppletSiteAdminView extends GalleryView {
     /**
     * @see GalleryView::loadTemplate
     */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	$AdminUploadApplet = array();
 
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();

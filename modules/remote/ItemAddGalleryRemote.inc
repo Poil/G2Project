@@ -30,7 +30,7 @@ class ItemAddGalleryRemote extends ItemAddPlugin {
     /**
      * @see ItemAdd:loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	if ($form['formName'] != 'ItemAddGalleryRemote') {
 	    $form['formName'] = 'ItemAddGalleryRemote';
 	}

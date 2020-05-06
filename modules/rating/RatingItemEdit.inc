@@ -63,7 +63,7 @@ class RatingItemEdit extends ItemEditOption {
 	/**
 	 * @see ItemEditOption::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		if (empty($form['error'])) {
 			list($ret, $form['rating']['enabled']) = GalleryCoreApi::getPluginParameter(
 				'module',

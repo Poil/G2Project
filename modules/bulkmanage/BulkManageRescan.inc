@@ -46,7 +46,7 @@ class BulkManageRescan extends BulkManagePlugin {
     /**
      * @see BulkManagePlugin::loadTemplate
      */
-    function loadTemplate(&$template)
+    function loadTemplate(&$template=null)
     {
         $template->setVariable('controller', 'bulkmanage.BulkManage');
         return array(null, 'modules/bulkmanage/templates/BulkManageRescan.tpl', 'modules_bulkmange');

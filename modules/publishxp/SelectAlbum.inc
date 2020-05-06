@@ -82,7 +82,7 @@ class SelectAlbumView extends GalleryView {
      *
      * @see GalleryController:loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	if ($form['formName'] != 'SelectAlbum') {
 	    $form['formName'] = 'SelectAlbum';
 	    $form['albumId'] = GalleryUtilities::getRequestVariables('albumId');

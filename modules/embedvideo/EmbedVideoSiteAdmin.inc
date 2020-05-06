@@ -140,7 +140,7 @@ class EmbedVideoSiteAdminView extends GalleryView {
     /**
     * @see GalleryView::loadTemplate
     */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	$AdminEmbedVideo = array();
 
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();

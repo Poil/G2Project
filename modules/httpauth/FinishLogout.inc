@@ -32,7 +32,7 @@ class FinishLogoutView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
 	$urlGenerator =& $gallery->getUrlGenerator();
 

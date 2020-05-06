@@ -96,7 +96,7 @@ class NewItemsSiteAdminView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	GalleryCoreApi::requireOnce('modules/newitems/classes/NewItemsHelper.class');
 
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();

@@ -154,7 +154,7 @@ class ItemAddWebCam extends ItemAddPlugin {
     /**
      * @see ItemAdd:loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	global $gallery;
 
 	list ($ret, $module) = GalleryCoreApi::loadPlugin('module', 'webcam');

@@ -214,7 +214,7 @@ class ItemAddFromBrowser extends ItemAddPlugin {
 	/**
 	 * @see ItemAdd:loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item) {
+	public function loadTemplate(&$template=null, &$form=null, $item) {
 		$fileUploadsBool = GalleryUtilities::getPhpIniBool('file_uploads');
 		$totalUploadSize = ini_get('post_max_size');
 

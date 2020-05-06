@@ -37,7 +37,7 @@ class CustomThumbnailOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	GalleryCoreApi::requireOnce('modules/thumbnail/classes/ThumbnailHelper.class');
 
 	/* Is this item already using a custom thumbnail.. */

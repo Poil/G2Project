@@ -142,7 +142,7 @@ class NotificationUserAdminView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	/* Check that the user is logged in */
 	list ($ret, $userId) = NotificationHelper::getUserIdCheck();
 	if ($ret) {

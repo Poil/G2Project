@@ -46,7 +46,7 @@ class DebugModule extends GalleryModule {
     /**
      * @see GalleryModule::getItemLinks
      */
-    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId) {
+    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId=null) {
 	$links = array();
 
 	list ($ret, $isAdmin) = GalleryCoreApi::isUserInSiteAdminGroup($userId);

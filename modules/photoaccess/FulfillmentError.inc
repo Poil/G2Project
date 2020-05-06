@@ -30,7 +30,7 @@ class FulfillmentErrorView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	list ($ret, $module) = GalleryCoreApi::loadPlugin('module', 'photoaccess');
 	if ($ret) {
 	    return array($ret, null);

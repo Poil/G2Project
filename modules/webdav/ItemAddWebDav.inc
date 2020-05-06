@@ -319,7 +319,7 @@ class ItemAddWebDav extends ItemAddPlugin {
     /**
      * @see ItemAddPlugin::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	return array(null, 'modules/webdav/templates/ItemAddWebDav.tpl', 'modules_webdav');
     }
 

@@ -99,7 +99,7 @@ class NewAlbumView extends GalleryView {
     /**
      * @see GalleryView:loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
 	if ($form['formName'] != 'NewAlbum') {
 	    $form['formName'] = 'NewAlbum';

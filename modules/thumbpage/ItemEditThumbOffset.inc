@@ -88,7 +88,7 @@ class ItemEditThumbOffset extends ItemEditPlugin {
     /**
      * @see ItemEditPlugin::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	if ($form['formName'] != 'ItemEditThumbOffset') {
 	    $form['formName'] = 'ItemEditThumbOffset';
 	    $form['offset'] = '0';

@@ -197,7 +197,7 @@ class UserSelfRegistrationView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	if ($form['formName'] != 'UserSelfRegistration') {
 	    /* First time around, set our defaults here. */
 	    $form['userName'] = '';

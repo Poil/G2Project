@@ -552,7 +552,7 @@ class ItemAddFromServer extends ItemAddPlugin {
      * @see ItemAdd:loadTemplate
      * @todo Don't let the user select folders if the user is missing the core.addAlbum permission.
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	global $gallery;
 
 	if ($form['formName'] != 'ItemAddFromServer') {

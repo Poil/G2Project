@@ -117,7 +117,7 @@ class AdminSelfRegistrationView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	GalleryCoreApi::requireOnce('modules/register/classes/GalleryPendingUserHelper.class');
 
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();

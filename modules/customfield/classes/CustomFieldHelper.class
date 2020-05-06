@@ -49,7 +49,7 @@ class CustomFieldHelper extends CustomFieldInterface_1_0 /* and GalleryEventList
      *               mixed containing custom field data
      *               boolean true if album-specific settings are returned
      */
-    function loadParameters($containerId=0, $fallback=true,
+    static function loadParameters($containerId=0, $fallback=true,
 			    $sets = array('common', 'album', 'photo')) {
 	$isContainer = ($containerId > 0);
 	list ($ret, $param) =
@@ -196,7 +196,7 @@ class CustomFieldHelper extends CustomFieldInterface_1_0 /* and GalleryEventList
      *               array(itemId => array) loadParameters results
      *               array(itemId => boolean) loadParameters results
      */
-    function fetchFieldValues($items, $viewType=null, $fillSet=null) {
+    static function fetchFieldValues($items, $viewType=null, $fillSet=null) {
 	global $gallery;
 	$data = $result = array();
 

@@ -73,7 +73,7 @@ class ItemAddModule extends GalleryModule {
     /**
      * @see GalleryModule::upgrade
      */
-    function upgrade($currentVersion) {
+    function upgrade($currentVersion, $x1=null) {
 	list ($ret, $params) = GalleryCoreApi::fetchAllPluginParameters('module', 'itemadd');
 	if ($ret) {
 	    return $ret;

@@ -217,7 +217,7 @@ class ItemAddLinkItem extends ItemAddPlugin {
     /**
      * @see ItemAdd::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item) {
+    function loadTemplate(&$template=null, &$form=null, $item) {
 	if ($form['formName'] != 'ItemAddLinkItem') {
 	    $form['formName'] = 'ItemAddLinkItem';
 	    $form['linkType'] = 'album';

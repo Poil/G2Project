@@ -143,7 +143,7 @@ class PasswordEntryView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	if ($form['formName'] != 'PasswordEntry') {
 	    $form['formName'] = 'PasswordEntry';
 	    $form['itemId'] = GalleryUtilities::getRequestVariables('itemId');

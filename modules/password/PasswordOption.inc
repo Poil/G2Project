@@ -55,7 +55,7 @@ class PasswordOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	$form['PasswordOption']['hasPassword'] = $item->hasOnLoadHandler('Password');
 	$form['PasswordOption']['isAlbum'] = $item->getCanContainChildren();
 	return array(null, 'modules/password/templates/PasswordOption.tpl', 'modules_password');

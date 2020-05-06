@@ -39,7 +39,7 @@ class SizeLimitOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	/*
 	 * Get the parameters for this album;
 	 * we are assuming that both $height and $width are either in or out...

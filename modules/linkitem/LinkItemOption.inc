@@ -38,7 +38,7 @@ class LinkItemOption extends ItemEditOption {
     /**
      * @see ItemEditOption::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	if (!isset($form['LinkItemOption'])) {
 	    $form['LinkItemOption']['link'] = $item->getLink();
 	}

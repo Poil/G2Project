@@ -293,7 +293,7 @@ class ItemEditAlbum extends ItemEditPlugin {
 	/**
 	 * @see ItemEditPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		if ($form['formName'] != 'ItemEditAlbum') {
 			$tmp = explode('|', $item->getOrderBy(), 2);
 

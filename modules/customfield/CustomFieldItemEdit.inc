@@ -100,7 +100,7 @@ class CustomFieldItemEdit extends ItemEditPlugin {
     /**
      * @see ItemEditPlugin::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	global $gallery;
 	$session =& $gallery->getSession();
 	$tmp = $session->get(CUSTOM_FIELD_SESSION_KEY);

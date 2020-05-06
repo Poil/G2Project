@@ -30,7 +30,7 @@ class SampleView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	list ($ret, $imageframe) =
 	    GalleryCoreApi::newFactoryInstance('ImageFrameInterface_1_1');
 	if ($ret) {

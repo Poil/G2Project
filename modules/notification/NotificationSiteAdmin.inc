@@ -176,7 +176,7 @@ class NotificationSiteAdminView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
 
 	$template->style('modules/notification/data/grids.css');

@@ -30,7 +30,7 @@ class CantActivateView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	return array(null, array('body' => 'modules/getid3/templates/CantActivate.tpl'));
     }
 }

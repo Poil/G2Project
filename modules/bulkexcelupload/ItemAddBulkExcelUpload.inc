@@ -332,7 +332,7 @@ class ItemAddBulkExcelUpload extends ItemAddPlugin {
 	 * Validate field values.
 	 *
 	 */
-	public function loadTemplate(&$template, &$form, $item) {
+	public function loadTemplate(&$template=null, &$form=null, $item) {
 		global $gallery;
 
 		list($ret, $module) = GalleryCoreApi::loadPlugin('module', 'bulkexcelupload');

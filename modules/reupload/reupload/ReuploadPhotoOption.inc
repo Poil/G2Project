@@ -172,7 +172,7 @@ class ReuploadPhotoOption extends ItemEditOption {
 	/**
 	 * @see ItemEditOption::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		list($ret, $module) = GalleryCoreApi::loadPlugin('module', 'reupload');
 
 		if ($ret) {

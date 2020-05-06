@@ -34,7 +34,7 @@ class UploadedItemView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	/* Views need to either return a body template or a redirect. Just return a dummy here. */
 	return array(null, array('redirect' => array('view' => 'core.ShowItem'),
 				 'status' => array(), 'error' => array()));

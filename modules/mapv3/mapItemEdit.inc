@@ -138,7 +138,7 @@ class mapItemEdit extends ItemEditPlugin {
 	/**
 	 * @see ItemEditPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		if ($form['formName'] != 'mapItemEdit') {
 			$form['formName'] = 'mapItemEdit';
 			$form['itemId']   = $item->getId();

@@ -105,7 +105,7 @@ class CaptchaValidationPlugin extends GalleryValidationPlugin {
 	/**
 	 * @see GalleryValidationPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$form, $options = array()) {
+	public function loadTemplate(&$form=null, $options = array()) {
 		list($ret, $useCaptcha) = $this->_shouldValidate($options);
 
 		if ($ret) {

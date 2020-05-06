@@ -129,7 +129,7 @@ class NotificationItemAdminView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	if ($form['formName'] != 'NotificationItemAdmin') {
 	    $ret = $this->_initializeForm($form);
 	    if ($ret) {

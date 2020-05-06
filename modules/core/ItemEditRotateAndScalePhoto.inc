@@ -191,7 +191,7 @@ class ItemEditRotateAndScalePhoto extends ItemEditPlugin {
 	/**
 	 * @see ItemEditPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		$ItemEditRotateAndScalePhoto = array();
 
 		list($ret, $ItemEditRotateAndScalePhoto['isAdmin']) = GalleryCoreApi::isUserInSiteAdminGroup();

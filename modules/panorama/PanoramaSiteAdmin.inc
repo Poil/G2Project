@@ -77,7 +77,7 @@ class PanoramaSiteAdminView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	GalleryCoreApi::requireOnce('modules/panorama/classes/PanoramaHelper.class');
 
 	$ret = GalleryCoreApi::assertUserIsSiteAdministrator();

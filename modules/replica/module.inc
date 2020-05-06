@@ -45,7 +45,7 @@ class ReplicaModule extends GalleryModule {
     /**
      * @see GalleryModule::getItemLinks
      */
-    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId) {
+    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId=null) {
 	global $gallery;
 	$links = array();
 	foreach ($items as $item) {

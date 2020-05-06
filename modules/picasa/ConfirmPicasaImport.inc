@@ -314,7 +314,7 @@ class ConfirmPicasaImportView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
 
 	/* Verify that active user is an admin */

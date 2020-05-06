@@ -32,7 +32,7 @@ class ViewCartView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
 
 	$returnItemId = GalleryUtilities::getRequestVariables('itemId');

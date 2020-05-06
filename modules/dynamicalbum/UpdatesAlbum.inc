@@ -118,7 +118,7 @@ class UpdatesAlbumView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	list ($itemId, $show, $albumId) =
 	    GalleryUtilities::getRequestVariables('itemId', 'show', 'albumId');
 	$theme =& $template->getVariableByReference('theme');

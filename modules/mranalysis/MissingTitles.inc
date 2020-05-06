@@ -56,7 +56,7 @@ class MissingTitlesView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	global $gallery;
       
 	$form['formName'] = 'AdminMissingTitles';  

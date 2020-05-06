@@ -261,7 +261,7 @@ class UploadItemsView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
 	if ($form['formName'] != 'UploadItems') {
 	    $form['formName'] = 'UploadItems';
 	}

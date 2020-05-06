@@ -105,7 +105,7 @@ class SettingsView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form) {
+    function loadTemplate(&$template=null, &$form=null) {
         global $gallery;
         
         if ($form['formName'] != 'mranalysis.Settings') {

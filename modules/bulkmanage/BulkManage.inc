@@ -109,7 +109,7 @@ class BulkManageView extends GalleryView {
     /**
      * @see GalleryView::loadTemplate
      */
-    function loadTemplate(&$template, &$form)
+    function loadTemplate(&$template=null, &$form=null)
     {
         global $gallery;
         list ($itemId, $bulkPlugin) = GalleryUtilities::getRequestVariables('itemId', 'bulkPlugin');

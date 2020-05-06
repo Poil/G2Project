@@ -54,7 +54,7 @@ class RssModule extends GalleryModule /* and GalleryEventListener */ {
     /**
      * @see GalleryModule::getItemLinks
      */
-    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId) {
+    function getItemLinks($items, $wantsDetailedLinks, $permissions, $userId=null) {
 	GalleryCoreApi::requireOnce('modules/rss/classes/RssMapHelper.class');
 	$links = array();
 

@@ -78,7 +78,7 @@ class ItemEditThumbPage extends ItemEditPlugin {
     /**
      * @see ItemEditPlugin::loadTemplate
      */
-    function loadTemplate(&$template, &$form, $item, $thumbnail) {
+    function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 	if ($form['formName'] != 'ItemEditThumbPage') {
 	    $form['formName'] = 'ItemEditThumbPage';
 	    $form['page'] = 1;

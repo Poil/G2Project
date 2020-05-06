@@ -305,7 +305,7 @@ class ItemEditWatermark extends ItemEditPlugin {
 	/**
 	 * @see ItemEditPlugin::loadTemplate
 	 */
-	public function loadTemplate(&$template, &$form, $item, $thumbnail) {
+	public function loadTemplate(&$template=null, &$form=null, $item, $thumbnail) {
 		// Load up all watermarks
 		GalleryCoreApi::requireOnce('modules/watermark/classes/WatermarkHelper.class');
 		list($ret, $watermarks) = WatermarkHelper::fetchWatermarks();
